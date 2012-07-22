@@ -1,8 +1,7 @@
-﻿using System.Web;
-using System.Web.Optimization;
-
-namespace StoryMapper.UI
+﻿namespace StoryMapper.UI
 {
+    using System.Web.Optimization;
+
     public class BundleConfig
     {
         public static void RegisterBundles(BundleCollection bundles)

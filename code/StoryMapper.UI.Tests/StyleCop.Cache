@@ -1,0 +1,35 @@
+<stylecopresultscache>
+  <version>11</version>
+  <sourcecode name="UnitTest1.cs" parser="StyleCop.CSharp.CsParser">
+    <settings>
+      <timestamp>07/21/2012 21:17:53</timestamp>
+      <milliseconds>243</milliseconds>
+    </settings>
+    <timestamp>07/21/2012 21:19:18</timestamp>
+    <milliseconds>22</milliseconds>
+    <violations>
+      <violation namespace="StyleCop.CSharp.OrderingRules" rule="UsingDirectivesMustBePlacedWithinNamespace" ruleCheckId="SA1200">
+        <context>All using directives must be placed inside of the namespace.</context>
+        <line>1</line>
+        <warning>False</warning>
+      </violation>
+      <violation namespace="StyleCop.CSharp.OrderingRules" rule="UsingDirectivesMustBePlacedWithinNamespace" ruleCheckId="SA1200">
+        <context>All using directives must be placed inside of the namespace.</context>
+        <line>2</line>
+        <warning>False</warning>
+      </violation>
+    </violations>
+  </sourcecode>
+  <sourcecode name="AssemblyInfo.cs" parser="StyleCop.CSharp.CsParser">
+    <settings>
+      <timestamp>07/21/2012 21:17:53</timestamp>
+      <milliseconds>243</milliseconds>
+    </settings>
+    <timestamp>07/21/2012 21:19:18</timestamp>
+    <milliseconds>10</milliseconds>
+    <violations />
+  </sourcecode>
+  <project key="-1333518935">
+    <configuration>DEBUG;TRACE</configuration>
+  </project>
+</stylecopresultscache>

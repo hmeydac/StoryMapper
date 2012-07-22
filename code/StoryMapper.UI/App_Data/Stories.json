@@ -1,0 +1,7 @@
+﻿[
+	{ Name: "Create the repository", ProjectName: "StoryMapper" },
+	{ Name: "Create the service", ProjectName: "StoryMapper" },
+	{ Name: "Create the entity", ProjectName: "StoryMapper" },
+	{ Name: "Create Controller", ProjectName: "StoryMapper" },
+	{ Name: "Create View", ProjectName: "StoryMapper" }
+]

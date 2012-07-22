@@ -1,0 +1,105 @@
+<stylecopresultscache>
+  <version>11</version>
+  <sourcecode name="AccountModels.cs" parser="StyleCop.CSharp.CsParser">
+    <settings>
+      <timestamp>07/22/2012 08:58:18</timestamp>
+      <milliseconds>709</milliseconds>
+    </settings>
+    <timestamp>07/21/2012 21:15:17</timestamp>
+    <milliseconds>826</milliseconds>
+    <violations>
+      <violation namespace="StyleCop.CSharp.OrderingRules" rule="UsingDirectivesMustBePlacedWithinNamespace" ruleCheckId="SA1200">
+        <context>All using directives must be placed inside of the namespace.</context>
+        <line>1</line>
+        <warning>False</warning>
+      </violation>
+      <violation namespace="StyleCop.CSharp.OrderingRules" rule="UsingDirectivesMustBePlacedWithinNamespace" ruleCheckId="SA1200">
+        <context>All using directives must be placed inside of the namespace.</context>
+        <line>2</line>
+        <warning>False</warning>
+      </violation>
+      <violation namespace="StyleCop.CSharp.OrderingRules" rule="UsingDirectivesMustBePlacedWithinNamespace" ruleCheckId="SA1200">
+        <context>All using directives must be placed inside of the namespace.</context>
+        <line>3</line>
+        <warning>False</warning>
+      </violation>
+      <violation namespace="StyleCop.CSharp.OrderingRules" rule="UsingDirectivesMustBePlacedWithinNamespace" ruleCheckId="SA1200">
+        <context>All using directives must be placed inside of the namespace.</context>
+        <line>4</line>
+        <warning>False</warning>
+      </violation>
+      <violation namespace="StyleCop.CSharp.OrderingRules" rule="UsingDirectivesMustBePlacedWithinNamespace" ruleCheckId="SA1200">
+        <context>All using directives must be placed inside of the namespace.</context>
+        <line>5</line>
+        <warning>False</warning>
+      </violation>
+      <violation namespace="StyleCop.CSharp.LayoutRules" rule="OpeningCurlyBracketsMustNotBeFollowedByBlankLine" ruleCheckId="SA1505">
+        <context>An opening curly bracket must not be followed by a blank line.</context>
+        <line>8</line>
+        <warning>False</warning>
+      </violation>
+      <violation namespace="StyleCop.CSharp.MaintainabilityRules" rule="FileMayOnlyContainASingleClass" ruleCheckId="SA1402">
+        <context>A C# document may only contain a single class at the root level unless all of the classes are partial and are of the same type.</context>
+        <line>29</line>
+        <warning>False</warning>
+      </violation>
+    </violations>
+  </sourcecode>
+  <sourcecode name="BundleConfig.cs" parser="StyleCop.CSharp.CsParser">
+    <settings>
+      <timestamp>07/22/2012 08:58:18</timestamp>
+      <milliseconds>709</milliseconds>
+    </settings>
+    <timestamp>07/22/2012 08:58:41</timestamp>
+    <milliseconds>891</milliseconds>
+    <violations />
+  </sourcecode>
+  <sourcecode name="FilterConfig.cs" parser="StyleCop.CSharp.CsParser">
+    <settings>
+      <timestamp>07/22/2012 08:58:18</timestamp>
+      <milliseconds>709</milliseconds>
+    </settings>
+    <timestamp>07/22/2012 08:58:48</timestamp>
+    <milliseconds>193</milliseconds>
+    <violations />
+  </sourcecode>
+  <sourcecode name="RouteConfig.cs" parser="StyleCop.CSharp.CsParser">
+    <settings>
+      <timestamp>07/22/2012 08:58:18</timestamp>
+      <milliseconds>709</milliseconds>
+    </settings>
+    <timestamp>07/22/2012 08:59:36</timestamp>
+    <milliseconds>54</milliseconds>
+    <violations />
+  </sourcecode>
+  <sourcecode name="HomeController.cs" parser="StyleCop.CSharp.CsParser">
+    <settings>
+      <timestamp>07/22/2012 08:58:18</timestamp>
+      <milliseconds>709</milliseconds>
+    </settings>
+    <timestamp>07/22/2012 08:59:50</timestamp>
+    <milliseconds>313</milliseconds>
+    <violations />
+  </sourcecode>
+  <sourcecode name="Global.asax.cs" parser="StyleCop.CSharp.CsParser">
+    <settings>
+      <timestamp>07/22/2012 08:58:18</timestamp>
+      <milliseconds>709</milliseconds>
+    </settings>
+    <timestamp>07/22/2012 09:00:24</timestamp>
+    <milliseconds>368</milliseconds>
+    <violations />
+  </sourcecode>
+  <sourcecode name="AssemblyInfo.cs" parser="StyleCop.CSharp.CsParser">
+    <settings>
+      <timestamp>07/22/2012 08:58:18</timestamp>
+      <milliseconds>709</milliseconds>
+    </settings>
+    <timestamp>07/21/2012 21:15:17</timestamp>
+    <milliseconds>840</milliseconds>
+    <violations />
+  </sourcecode>
+  <project key="1763053270">
+    <configuration>DEBUG;TRACE</configuration>
+  </project>
+</stylecopresultscache>

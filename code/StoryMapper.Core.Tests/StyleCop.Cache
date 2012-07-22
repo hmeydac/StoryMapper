@@ -1,0 +1,53 @@
+<stylecopresultscache>
+  <version>11</version>
+  <sourcecode name="UnitTest1.cs" parser="StyleCop.CSharp.CsParser">
+    <settings>
+      <timestamp>07/21/2012 21:17:53</timestamp>
+      <milliseconds>243</milliseconds>
+    </settings>
+    <timestamp>07/22/2012 08:19:44</timestamp>
+    <milliseconds>870</milliseconds>
+    <violations>
+      <violation namespace="StyleCop.CSharp.OrderingRules" rule="UsingDirectivesMustBePlacedWithinNamespace" ruleCheckId="SA1200">
+        <context>All using directives must be placed inside of the namespace.</context>
+        <line>1</line>
+        <warning>False</warning>
+      </violation>
+      <violation namespace="StyleCop.CSharp.OrderingRules" rule="UsingDirectivesMustBePlacedWithinNamespace" ruleCheckId="SA1200">
+        <context>All using directives must be placed inside of the namespace.</context>
+        <line>2</line>
+        <warning>False</warning>
+      </violation>
+    </violations>
+  </sourcecode>
+  <sourcecode name="AssemblyInfo.cs" parser="StyleCop.CSharp.CsParser">
+    <settings>
+      <timestamp>07/21/2012 21:17:53</timestamp>
+      <milliseconds>243</milliseconds>
+    </settings>
+    <timestamp>07/22/2012 08:19:44</timestamp>
+    <milliseconds>808</milliseconds>
+    <violations />
+  </sourcecode>
+  <sourcecode name="StoryRepositoryTests.cs" parser="StyleCop.CSharp.CsParser">
+    <settings>
+      <timestamp>07/21/2012 21:17:53</timestamp>
+      <milliseconds>243</milliseconds>
+    </settings>
+    <timestamp>07/22/2012 09:17:03</timestamp>
+    <milliseconds>35</milliseconds>
+    <violations />
+  </sourcecode>
+  <project key="2140673383">
+    <configuration>DEBUG;TRACE</configuration>
+  </project>
+  <sourcecode name="DomainTests.cs" parser="StyleCop.CSharp.CsParser">
+    <settings>
+      <timestamp>07/21/2012 21:17:53</timestamp>
+      <milliseconds>243</milliseconds>
+    </settings>
+    <timestamp>07/22/2012 09:10:51</timestamp>
+    <milliseconds>596</milliseconds>
+    <violations />
+  </sourcecode>
+</stylecopresultscache>

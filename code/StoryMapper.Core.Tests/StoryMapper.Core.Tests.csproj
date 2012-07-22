@@ -3,11 +3,11 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{FA1275C5-137F-4EE0-8E5B-5783CF62F807}</ProjectGuid>
+    <ProjectGuid>{C643FD2A-F86B-4DF5-AFEC-F3999DF2FA51}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>StoryMapper.UI.Tests</RootNamespace>
-    <AssemblyName>StoryMapper.UI.Tests</AssemblyName>
+    <RootNamespace>StoryMapper.Core.Tests</RootNamespace>
+    <AssemblyName>StoryMapper.Core.Tests</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <ProjectTypeGuids>{3AC096D0-A1C2-E12C-1390-A8335801FDAB};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
@@ -51,12 +51,19 @@
   </Choose>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="DomainTests.cs" />
+    <Compile Include="Repositories\StoryRepositoryTests.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\StoryMapper.UI\StoryMapper.UI.csproj">
-      <Project>{6a3d43cd-fd2a-465e-9d32-d17455521cb6}</Project>
-      <Name>StoryMapper.UI</Name>
+    <ProjectReference Include="..\StoryMapper.Core\StoryMapper.Core.csproj">
+      <Project>{d045d91c-5ded-4a0c-b001-1dfd512e81d7}</Project>
+      <Name>StoryMapper.Core</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="TestData\Stories.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
   </ItemGroup>
   <Choose>
     <When Condition="'$(VisualStudioVersion)' == '10.0' And '$(IsCodedUITest)' == 'True'">
