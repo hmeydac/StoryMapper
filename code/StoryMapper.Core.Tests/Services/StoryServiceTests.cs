@@ -23,13 +23,15 @@
         }
 
         [TestMethod]
-        public void GetStoriesShouldReturnAListOfStories()
+        public void GetStoriesByProjectShouldReturnAListOfStories()
         {
             // Arrange
             var service = new StoryService(this.GetMockDataList());
             var projectName = "StoryMapper";
+            
             // Act
             var actual = service.GetStoriesByProject(projectName);
+            
             // Assert
             Assert.IsNotNull(actual);
             Assert.IsInstanceOfType(actual, typeof(IEnumerable<Story>));

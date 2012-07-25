@@ -114,7 +114,26 @@
                 Assert.IsNotNull(story.ProjectName);
                 Assert.AreEqual(projectName, story.ProjectName);
             }
-        }        
+        }
+
+        [TestMethod]
+        public void GetSingleShouldReturnSingleStory()
+        {
+            // Arrange
+            var dataList = this.GetMockDataMultiProjectList();            
+            var expectedStoryName = "Test Story 1";
+            StoryRepository repository;
+
+            // Act
+            repository = new StoryRepository(dataList);
+            var actual = repository.Single(story => story.Name == expectedStoryName);
+
+            // Assert
+            Assert.IsNotNull(actual);
+            Assert.AreEqual(expectedStoryName, actual.Name);
+        }
+
+
 
         private IList<Story> GetMockDataList()
         {

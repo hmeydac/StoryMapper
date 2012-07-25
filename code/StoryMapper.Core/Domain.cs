@@ -40,8 +40,13 @@
             }
         }
 
-        public void InitializeFromFolder(string path)
+        public static void InitializeFromFolder(string path)
         {
+            Current.LoadStories(path);
+        }
+
+        public void Initialize(string path)
+        {            
             this.LoadStories(path);
         }
 
