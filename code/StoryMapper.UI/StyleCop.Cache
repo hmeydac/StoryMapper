@@ -45,15 +45,9 @@
       </violation>
     </violations>
   </sourcecode>
-  <sourcecode name="BundleConfig.cs" parser="StyleCop.CSharp.CsParser">
-    <settings>
-      <timestamp>07/22/2012 08:58:18</timestamp>
-      <milliseconds>709</milliseconds>
-    </settings>
-    <timestamp>07/22/2012 08:58:41</timestamp>
-    <milliseconds>891</milliseconds>
-    <violations />
-  </sourcecode>
+  <project key="1763053270">
+    <configuration>DEBUG;TRACE</configuration>
+  </project>
   <sourcecode name="FilterConfig.cs" parser="StyleCop.CSharp.CsParser">
     <settings>
       <timestamp>07/22/2012 08:58:18</timestamp>
@@ -81,6 +75,15 @@
     <milliseconds>313</milliseconds>
     <violations />
   </sourcecode>
+  <sourcecode name="BundleConfig.cs" parser="StyleCop.CSharp.CsParser">
+    <settings>
+      <timestamp>07/22/2012 08:58:18</timestamp>
+      <milliseconds>709</milliseconds>
+    </settings>
+    <timestamp>07/22/2012 08:58:41</timestamp>
+    <milliseconds>891</milliseconds>
+    <violations />
+  </sourcecode>
   <sourcecode name="Global.asax.cs" parser="StyleCop.CSharp.CsParser">
     <settings>
       <timestamp>07/22/2012 08:58:18</timestamp>
@@ -99,7 +102,4 @@
     <milliseconds>840</milliseconds>
     <violations />
   </sourcecode>
-  <project key="1763053270">
-    <configuration>DEBUG;TRACE</configuration>
-  </project>
 </stylecopresultscache>

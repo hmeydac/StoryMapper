@@ -11,13 +11,28 @@
     public class StoryServiceTests
     {
         [TestMethod]
-        public void IntantiateStoryServiceShouldWork()
+        public void InstantiateStoryServiceShouldNotThrowException()
+        {
+            // Arrange
+            StoryService service;
+
+            // Act
+            service = new StoryService();
+            
+            // Assert
+            Assert.IsNotNull(service);
+        }
+
+        [TestMethod]
+        public void InstantiateStoryServiceShouldWork()
         { 
             // Arrange
             StoryService service;
             var mockData = this.GetMockDataList();
+            
             // Act
             service = new StoryService(mockData);
+            
             // Assert
             Assert.IsNotNull(service);            
         }

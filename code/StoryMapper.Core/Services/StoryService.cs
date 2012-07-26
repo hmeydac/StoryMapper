@@ -4,7 +4,7 @@
     using StoryMapper.Core.Entities;
     using StoryMapper.Core.Repository;
 
-    public class StoryService
+    public class StoryService : StoryMapper.Core.Services.IStoryService
     {
         private StoryRepository storyRepository;
 

@@ -43,7 +43,7 @@
             var actual = this.Single(story => story.Name == entity.Name);
             if (actual == null)
             {
-                throw new Exception(string.Format("Invalid Update. Entity Story:{0} not found.", entity.Name));
+                throw new ArgumentException(string.Format("Invalid Update. Entity Story:{0} not found.", entity.Name));
             }
 
             actual.Name = entity.Name;

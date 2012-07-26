@@ -20,6 +20,18 @@
       </violation>
     </violations>
   </sourcecode>
+  <project key="2140673383">
+    <configuration>DEBUG;TRACE</configuration>
+  </project>
+  <sourcecode name="DomainTests.cs" parser="StyleCop.CSharp.CsParser">
+    <settings>
+      <timestamp>07/21/2012 21:17:53</timestamp>
+      <milliseconds>243</milliseconds>
+    </settings>
+    <timestamp>07/25/2012 08:20:00</timestamp>
+    <milliseconds>420</milliseconds>
+    <violations />
+  </sourcecode>
   <sourcecode name="AssemblyInfo.cs" parser="StyleCop.CSharp.CsParser">
     <settings>
       <timestamp>07/21/2012 21:17:53</timestamp>
@@ -29,25 +41,22 @@
     <milliseconds>808</milliseconds>
     <violations />
   </sourcecode>
+  <sourcecode name="StoryServiceTests.cs" parser="StyleCop.CSharp.CsParser">
+    <settings>
+      <timestamp>07/21/2012 21:17:53</timestamp>
+      <milliseconds>243</milliseconds>
+    </settings>
+    <timestamp>07/25/2012 20:46:07</timestamp>
+    <milliseconds>615</milliseconds>
+    <violations />
+  </sourcecode>
   <sourcecode name="StoryRepositoryTests.cs" parser="StyleCop.CSharp.CsParser">
     <settings>
       <timestamp>07/21/2012 21:17:53</timestamp>
       <milliseconds>243</milliseconds>
     </settings>
-    <timestamp>07/22/2012 09:17:03</timestamp>
-    <milliseconds>35</milliseconds>
-    <violations />
-  </sourcecode>
-  <project key="2140673383">
-    <configuration>DEBUG;TRACE</configuration>
-  </project>
-  <sourcecode name="DomainTests.cs" parser="StyleCop.CSharp.CsParser">
-    <settings>
-      <timestamp>07/21/2012 21:17:53</timestamp>
-      <milliseconds>243</milliseconds>
-    </settings>
-    <timestamp>07/22/2012 09:10:51</timestamp>
-    <milliseconds>596</milliseconds>
+    <timestamp>07/25/2012 20:46:01</timestamp>
+    <milliseconds>842</milliseconds>
     <violations />
   </sourcecode>
 </stylecopresultscache>

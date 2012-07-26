@@ -99,7 +99,7 @@
             // Arrange
             dataList = this.GetMockDataMultiProjectList();
             projectName = "TestProject2"; // Third Project      
-        
+
             // Act
             repository = new StoryRepository(dataList);
             actual = repository.GetList(story => story.ProjectName == projectName);
@@ -120,20 +120,109 @@
         public void GetSingleShouldReturnSingleStory()
         {
             // Arrange
-            var dataList = this.GetMockDataMultiProjectList();            
+            var dataList = this.GetMockDataMultiProjectList();
             var expectedStoryName = "Test Story 1";
+            var expectedProjectName = "StoryMapper";
             StoryRepository repository;
 
             // Act
             repository = new StoryRepository(dataList);
-            var actual = repository.Single(story => story.Name == expectedStoryName);
+            var actual = repository.Single(story => story.Name == expectedStoryName && story.ProjectName == expectedProjectName);
 
             // Assert
             Assert.IsNotNull(actual);
             Assert.AreEqual(expectedStoryName, actual.Name);
+            Assert.AreEqual(expectedProjectName, actual.ProjectName);
         }
 
+        [TestMethod]
+        public void CreateStoryShouldAddNewStory()
+        {
+            // Arrange
+            var repository = new StoryRepository();
+            var expected = new Story
+            {
+                Name = "Story Test",
+                ProjectName = "StoryMapper"
+            };
 
+            // Act
+            var createdActual = repository.Create(expected);
+            var obtainedActual = repository.Single(story => story.Name == expected.Name && story.ProjectName == expected.ProjectName);
+            
+            // Assert
+            Assert.IsNotNull(createdActual);
+            Assert.IsNotNull(obtainedActual);
+            Assert.AreEqual(expected.Name, createdActual.Name);
+            Assert.AreEqual(expected.Name, obtainedActual.Name);
+            Assert.AreEqual(expected.ProjectName, createdActual.ProjectName);
+            Assert.AreEqual(expected.ProjectName, obtainedActual.ProjectName);
+        }
+
+        [TestMethod]
+        public void DeleteStoryShouldRemoveIt()
+        {
+            // Arrange            
+            var dataList = this.GetMockDataList();
+            var repository = new StoryRepository(dataList);
+            var expectedCount = dataList.Count() - 1;
+            var notExpected = dataList[0];
+
+            // Act
+            repository.Delete(notExpected);
+            var actual = repository.GetList();
+
+            // Assert
+            Assert.IsNotNull(actual);
+            Assert.AreEqual(expectedCount, actual.Count());
+            foreach (var story in actual)
+            {
+                if (notExpected.ProjectName == story.ProjectName)
+                {
+                    Assert.AreNotEqual(notExpected.Name, story.Name);
+                }
+            }
+        }
+
+        [TestMethod]
+        public void UpdateStoryShouldModifyValues()
+        {
+            // Arrange
+            var dataList = this.GetMockDataList();
+            var repository = new StoryRepository(dataList);
+            var expected = dataList[0];
+            expected.Name = "Updated Name";
+            expected.ProjectName = "Updated Project";
+
+            // Act
+            var updatedActual = repository.Update(expected);
+            var obtainedActual = repository.Single(story => story.Name == expected.Name && story.ProjectName == expected.ProjectName);
+
+            // Assert
+            Assert.IsNotNull(updatedActual);
+            Assert.IsNotNull(obtainedActual);
+            Assert.AreEqual(expected.Name, updatedActual.Name);
+            Assert.AreEqual(expected.Name, obtainedActual.Name);
+            Assert.AreEqual(expected.ProjectName, updatedActual.ProjectName);
+            Assert.AreEqual(expected.ProjectName, obtainedActual.ProjectName);
+        }
+
+        [TestMethod]
+        [ExpectedException(typeof(ArgumentException))]
+        public void UpdateNonExistentStoryShouldThrowException()
+        {
+            // Arrange
+            var dataList = this.GetMockDataList();
+            var repository = new StoryRepository(dataList);
+            var notExpected = new Story
+            {
+                Name = "Updated Name",
+                ProjectName = "Updated Project"
+            };
+
+            // Act
+            repository.Update(notExpected);
+        }
 
         private IList<Story> GetMockDataList()
         {
