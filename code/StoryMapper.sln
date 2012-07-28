@@ -15,12 +15,18 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Domain", "Domain", "{218A28
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StoryMapper.Core.Tests", "StoryMapper.Core.Tests\StoryMapper.Core.Tests.csproj", "{C643FD2A-F86B-4DF5-AFEC-F3999DF2FA51}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StoryMapper.Core.Mocks", "StoryMapper.Core.Mocks\StoryMapper.Core.Mocks.csproj", "{434A55DB-1B17-4636-810F-C20657D6A7B4}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{434A55DB-1B17-4636-810F-C20657D6A7B4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{434A55DB-1B17-4636-810F-C20657D6A7B4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{434A55DB-1B17-4636-810F-C20657D6A7B4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{434A55DB-1B17-4636-810F-C20657D6A7B4}.Release|Any CPU.Build.0 = Release|Any CPU
 		{6A3D43CD-FD2A-465E-9D32-D17455521CB6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{6A3D43CD-FD2A-465E-9D32-D17455521CB6}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6A3D43CD-FD2A-465E-9D32-D17455521CB6}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -42,6 +48,7 @@ Global
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
+		{434A55DB-1B17-4636-810F-C20657D6A7B4} = {7EF6DF14-4059-4AA4-A046-4E386A2B8BBE}
 		{6A3D43CD-FD2A-465E-9D32-D17455521CB6} = {E20302FD-66F1-4926-AA06-A9026472C246}
 		{C643FD2A-F86B-4DF5-AFEC-F3999DF2FA51} = {7EF6DF14-4059-4AA4-A046-4E386A2B8BBE}
 		{D045D91C-5DED-4A0C-B001-1DFD512E81D7} = {218A282A-D3F5-4DB2-81FE-6B6971171E02}

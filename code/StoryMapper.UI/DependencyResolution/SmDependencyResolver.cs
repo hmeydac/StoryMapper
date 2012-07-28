@@ -1,0 +1,42 @@
+namespace StoryMapper.UI
+{
+    using System;
+    using System.Collections.Generic;
+    using System.Linq;
+    using System.Web.Mvc;
+    using StructureMap;
+
+    public class SmDependencyResolver : IDependencyResolver
+    {
+        private readonly IContainer container;
+
+        public SmDependencyResolver(IContainer container)
+        {
+            this.container = container;
+        }
+
+        public object GetService(Type serviceType)
+        {
+            if (serviceType == null)
+            {
+                return null;
+            }
+
+            try
+            {
+                return serviceType.IsAbstract || serviceType.IsInterface
+                         ? this.container.TryGetInstance(serviceType)
+                         : this.container.GetInstance(serviceType);
+            }
+            catch
+            {
+                return null;
+            }
+        }
+
+        public IEnumerable<object> GetServices(Type serviceType)
+        {
+            return this.container.GetAllInstances(serviceType).Cast<object>();
+        }
+    }
+}

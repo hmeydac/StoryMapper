@@ -5,7 +5,10 @@
     using System.Linq;
     using Microsoft.VisualStudio.TestTools.UnitTesting;
     using StoryMapper.Core.Entities;
+    using StoryMapper.Core.Mocks.Repository;
+    using StoryMapper.Core.Repository;
     using StoryMapper.Core.Services;
+    using StructureMap;
 
     [TestClass]
     public class StoryServiceTests
@@ -14,39 +17,43 @@
         public void InstantiateStoryServiceShouldNotThrowException()
         {
             // Arrange
+            this.RegisterEmptyStoriesMock();
             StoryService service;
+            var storyRepository = this.GetMock<IStoryRepository>();
 
             // Act
-            service = new StoryService();
-            
+            service = new StoryService(storyRepository);
+
             // Assert
             Assert.IsNotNull(service);
         }
 
         [TestMethod]
         public void InstantiateStoryServiceShouldWork()
-        { 
+        {
             // Arrange
+            this.RegisterSingleProjectStoriesMock();
             StoryService service;
-            var mockData = this.GetMockDataList();
-            
+            var storyRepository = this.GetMock<IStoryRepository>();
+
             // Act
-            service = new StoryService(mockData);
-            
+            service = new StoryService(storyRepository);
+
             // Assert
-            Assert.IsNotNull(service);            
+            Assert.IsNotNull(service);
         }
 
         [TestMethod]
         public void GetStoriesByProjectShouldReturnAListOfStories()
         {
-            // Arrange
-            var service = new StoryService(this.GetMockDataList());
+            // Arrange       
+            this.RegisterSingleProjectStoriesMock();
+            var service = new StoryService(this.GetMock<IStoryRepository>());
             var projectName = "StoryMapper";
-            
+
             // Act
             var actual = service.GetStoriesByProject(projectName);
-            
+
             // Assert
             Assert.IsNotNull(actual);
             Assert.IsInstanceOfType(actual, typeof(IEnumerable<Story>));
@@ -59,15 +66,25 @@
             }
         }
 
-        private IList<Story> GetMockDataList()
+        private void RegisterEmptyStoriesMock()
         {
-            return new List<Story> 
-            { 
-                new Story { Name = "Test Story 1", ProjectName = "StoryMapper" },
-                new Story { Name = "Test Story 2", ProjectName = "StoryMapper" },
-                new Story { Name = "Test Story 3", ProjectName = "StoryMapper" },
-                new Story { Name = "Test Story 4", ProjectName = "StoryMapper" }
-            };
+            ObjectFactory.Initialize(x =>
+            {
+                x.For<IStoryRepository>().Use<EmptyStoryRepository>();
+            });
+        }
+
+        private void RegisterSingleProjectStoriesMock()
+        {
+            ObjectFactory.Initialize(x =>
+            {
+                x.For<IStoryRepository>().Use<SingleProjectStoryRepository>();
+            });
+        }
+
+        private T GetMock<T>()
+        {
+            return ObjectFactory.Container.TryGetInstance<T>();
         }
     }
 }

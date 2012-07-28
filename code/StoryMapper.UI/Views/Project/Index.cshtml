@@ -1,5 +1,17 @@
-﻿@{
+﻿@model StoryMapper.UI.Models.ProjectStoriesViewModel
+
+@{
     ViewBag.Title = "Stories";
 }
 
-<h2>Stories</h2>
+<h2>@(Model.ProjectName)</h2>
+<div class="row-fluid">
+@{        
+    foreach (var story in Model.Stories)
+    {
+        <div class="span4 well">
+            @(story.Name)
+        </div>        
+    } 
+}
+</div>

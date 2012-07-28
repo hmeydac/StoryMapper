@@ -6,15 +6,12 @@
 
     public class StoryService : StoryMapper.Core.Services.IStoryService
     {
-        private StoryRepository storyRepository;
+        private IStoryRepository storyRepository;
 
-        public StoryService() : this(new List<Story>())
-        {             
-        }
-
-        public StoryService(IList<Story> stories) : this(new StoryRepository(stories))
-        {             
-        }
+        public StoryService(IStoryRepository storyRepository)
+        {
+            this.storyRepository = storyRepository;
+        }     
 
         public StoryService(StoryRepository storyRepository)
         {

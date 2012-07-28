@@ -5,7 +5,7 @@
     using System.Linq;
     using StoryMapper.Core.Entities;
 
-    public class StoryRepository : IStoryRepository, IEntityRepository<Story>
+    public class StoryRepository : IStoryRepository
     {
         private readonly IList<Story> stories;
 

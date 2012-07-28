@@ -45,9 +45,24 @@
       </violation>
     </violations>
   </sourcecode>
-  <project key="1763053270">
-    <configuration>DEBUG;TRACE</configuration>
-  </project>
+  <sourcecode name="BundleConfig.cs" parser="StyleCop.CSharp.CsParser">
+    <settings>
+      <timestamp>07/22/2012 08:58:18</timestamp>
+      <milliseconds>709</milliseconds>
+    </settings>
+    <timestamp>07/22/2012 08:58:41</timestamp>
+    <milliseconds>891</milliseconds>
+    <violations />
+  </sourcecode>
+  <sourcecode name="DomainInitializer.cs" parser="StyleCop.CSharp.CsParser">
+    <settings>
+      <timestamp>07/22/2012 08:58:18</timestamp>
+      <milliseconds>709</milliseconds>
+    </settings>
+    <timestamp>07/28/2012 01:34:12</timestamp>
+    <milliseconds>486</milliseconds>
+    <violations />
+  </sourcecode>
   <sourcecode name="FilterConfig.cs" parser="StyleCop.CSharp.CsParser">
     <settings>
       <timestamp>07/22/2012 08:58:18</timestamp>
@@ -66,6 +81,15 @@
     <milliseconds>54</milliseconds>
     <violations />
   </sourcecode>
+  <sourcecode name="StructuremapMvc.cs" parser="StyleCop.CSharp.CsParser">
+    <settings>
+      <timestamp>07/22/2012 08:58:18</timestamp>
+      <milliseconds>709</milliseconds>
+    </settings>
+    <timestamp>07/28/2012 01:33:17</timestamp>
+    <milliseconds>965</milliseconds>
+    <violations />
+  </sourcecode>
   <sourcecode name="HomeController.cs" parser="StyleCop.CSharp.CsParser">
     <settings>
       <timestamp>07/22/2012 08:58:18</timestamp>
@@ -75,13 +99,22 @@
     <milliseconds>313</milliseconds>
     <violations />
   </sourcecode>
-  <sourcecode name="BundleConfig.cs" parser="StyleCop.CSharp.CsParser">
+  <sourcecode name="ProjectController.cs" parser="StyleCop.CSharp.CsParser">
     <settings>
       <timestamp>07/22/2012 08:58:18</timestamp>
       <milliseconds>709</milliseconds>
     </settings>
-    <timestamp>07/22/2012 08:58:41</timestamp>
-    <milliseconds>891</milliseconds>
+    <timestamp>07/28/2012 02:26:22</timestamp>
+    <milliseconds>345</milliseconds>
+    <violations />
+  </sourcecode>
+  <sourcecode name="IoC.cs" parser="StyleCop.CSharp.CsParser">
+    <settings>
+      <timestamp>07/22/2012 08:58:18</timestamp>
+      <milliseconds>709</milliseconds>
+    </settings>
+    <timestamp>07/28/2012 01:31:58</timestamp>
+    <milliseconds>288</milliseconds>
     <violations />
   </sourcecode>
   <sourcecode name="Global.asax.cs" parser="StyleCop.CSharp.CsParser">
@@ -89,9 +122,38 @@
       <timestamp>07/22/2012 08:58:18</timestamp>
       <milliseconds>709</milliseconds>
     </settings>
-    <timestamp>07/22/2012 09:00:24</timestamp>
-    <milliseconds>368</milliseconds>
+    <timestamp>07/28/2012 01:40:59</timestamp>
+    <milliseconds>158</milliseconds>
     <violations />
+  </sourcecode>
+  <sourcecode name="ProjectStoriesViewModel.cs" parser="StyleCop.CSharp.CsParser">
+    <settings>
+      <timestamp>07/22/2012 08:58:18</timestamp>
+      <milliseconds>709</milliseconds>
+    </settings>
+    <timestamp>07/28/2012 02:18:27</timestamp>
+    <milliseconds>551</milliseconds>
+    <violations />
+  </sourcecode>
+  <sourcecode name="StoryViewModel.cs" parser="StyleCop.CSharp.CsParser">
+    <settings>
+      <timestamp>07/22/2012 08:58:18</timestamp>
+      <milliseconds>709</milliseconds>
+    </settings>
+    <timestamp>07/28/2012 01:40:47</timestamp>
+    <milliseconds>327</milliseconds>
+    <violations>
+      <violation namespace="StyleCop.CSharp.OrderingRules" rule="UsingDirectivesMustBePlacedWithinNamespace" ruleCheckId="SA1200">
+        <context>All using directives must be placed inside of the namespace.</context>
+        <line>1</line>
+        <warning>False</warning>
+      </violation>
+      <violation namespace="StyleCop.CSharp.LayoutRules" rule="ElementsMustBeSeparatedByBlankLine" ruleCheckId="SA1516">
+        <context>Adjacent elements must be separated by a blank line.</context>
+        <line>2</line>
+        <warning>False</warning>
+      </violation>
+    </violations>
   </sourcecode>
   <sourcecode name="AssemblyInfo.cs" parser="StyleCop.CSharp.CsParser">
     <settings>
@@ -100,6 +162,18 @@
     </settings>
     <timestamp>07/21/2012 21:15:17</timestamp>
     <milliseconds>840</milliseconds>
+    <violations />
+  </sourcecode>
+  <project key="1763053270">
+    <configuration>DEBUG;TRACE</configuration>
+  </project>
+  <sourcecode name="SmDependencyResolver.cs" parser="StyleCop.CSharp.CsParser">
+    <settings>
+      <timestamp>07/22/2012 08:58:18</timestamp>
+      <milliseconds>709</milliseconds>
+    </settings>
+    <timestamp>07/28/2012 02:28:03</timestamp>
+    <milliseconds>341</milliseconds>
     <violations />
   </sourcecode>
 </stylecopresultscache>

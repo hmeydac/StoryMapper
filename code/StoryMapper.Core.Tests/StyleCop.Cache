@@ -20,6 +20,26 @@
       </violation>
     </violations>
   </sourcecode>
+  <sourcecode name="IoC.cs" parser="StyleCop.CSharp.CsParser">
+    <settings>
+      <timestamp>07/21/2012 21:17:53</timestamp>
+      <milliseconds>243</milliseconds>
+    </settings>
+    <timestamp>07/27/2012 21:55:07</timestamp>
+    <milliseconds>975</milliseconds>
+    <violations>
+      <violation namespace="StyleCop.CSharp.LayoutRules" rule="SingleLineCommentMustBePrecededByBlankLine" ruleCheckId="SA1515">
+        <context>A single-line comment must be preceded by a blank line or another single-line comment, or must be the first item in its scope. To ignore this error when commenting out a line of code, begin the comment with '////' rather than '//'.</context>
+        <line>16</line>
+        <warning>False</warning>
+      </violation>
+      <violation namespace="StyleCop.CSharp.SpacingRules" rule="SingleLineCommentsMustBeginWithSingleSpace" ruleCheckId="SA1005">
+        <context>The comment must start with a single space. To ignore this error when commenting out a line of code, begin the comment with '////' rather than '//'.</context>
+        <line>16</line>
+        <warning>False</warning>
+      </violation>
+    </violations>
+  </sourcecode>
   <project key="2140673383">
     <configuration>DEBUG;TRACE</configuration>
   </project>
@@ -46,8 +66,8 @@
       <timestamp>07/21/2012 21:17:53</timestamp>
       <milliseconds>243</milliseconds>
     </settings>
-    <timestamp>07/25/2012 20:46:07</timestamp>
-    <milliseconds>615</milliseconds>
+    <timestamp>07/28/2012 02:02:40</timestamp>
+    <milliseconds>873</milliseconds>
     <violations />
   </sourcecode>
   <sourcecode name="StoryRepositoryTests.cs" parser="StyleCop.CSharp.CsParser">

@@ -35,7 +35,15 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Moq">
+      <HintPath>..\packages\Moq.4.0.10827\lib\NET40\Moq.dll</HintPath>
+    </Reference>
+    <Reference Include="StructureMap, Version=2.6.3.0, Culture=neutral, PublicKeyToken=e60ad81abae3c223, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\structuremap.2.6.3\lib\StructureMap.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
+    <Reference Include="System.Web.Mvc, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL" />
   </ItemGroup>
   <Choose>
     <When Condition="('$(VisualStudioVersion)' == '10.0' or '$(VisualStudioVersion)' == '') and '$(TargetFrameworkVersion)' == 'v3.5'">
@@ -50,13 +58,25 @@
     </Otherwise>
   </Choose>
   <ItemGroup>
+    <Compile Include="Controllers\ProjectControllerTests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\StoryMapper.Core.Mocks\StoryMapper.Core.Mocks.csproj">
+      <Project>{434a55db-1b17-4636-810f-c20657d6a7b4}</Project>
+      <Name>StoryMapper.Core.Mocks</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\StoryMapper.Core\StoryMapper.Core.csproj">
+      <Project>{d045d91c-5ded-4a0c-b001-1dfd512e81d7}</Project>
+      <Name>StoryMapper.Core</Name>
+    </ProjectReference>
     <ProjectReference Include="..\StoryMapper.UI\StoryMapper.UI.csproj">
       <Project>{6a3d43cd-fd2a-465e-9d32-d17455521cb6}</Project>
       <Name>StoryMapper.UI</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
   </ItemGroup>
   <Choose>
     <When Condition="'$(VisualStudioVersion)' == '10.0' And '$(IsCodedUITest)' == 'True'">
