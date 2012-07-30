@@ -44,20 +44,20 @@
             var top;
 
             switch (mode) {
-            case "BEFORE":
-                top = update.firstChild;
-                $("<div />").html(data).contents().each(function () {
-                    update.insertBefore(this, top);
-                });
-                break;
-            case "AFTER":
-                $("<div />").html(data).contents().each(function () {
-                    update.appendChild(this);
-                });
-                break;
-            default:
-                $(update).html(data);
-                break;
+                case "BEFORE":
+                    top = update.firstChild;
+                    $("<div />").html(data).contents().each(function () {
+                        update.insertBefore(this, top);
+                    });
+                    break;
+                case "AFTER":
+                    $("<div />").html(data).contents().each(function () {
+                        update.appendChild(this);
+                    });
+                    break;
+                default:
+                    $(update).html(data);
+                    break;
             }
         });
     }
@@ -141,7 +141,7 @@
         var name = evt.target.name,
             form = $(evt.target).parents("form")[0];
 
-        $(form).data(data_click, name ? [{ name: name, value: evt.target.value }] : []);
+        $(form).data(data_click, name ? [{ name: name, value: evt.target.value}] : []);
 
         setTimeout(function () {
             $(form).removeData(data_click);
@@ -160,4 +160,4 @@
             data: clickInfo.concat($(this).serializeArray())
         });
     });
-}(jQuery));
+} (jQuery));

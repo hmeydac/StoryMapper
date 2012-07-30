@@ -8,8 +8,8 @@
     {
         public IEnumerable<Entities.Story> GetStoriesByProject(string projectName)
         {
-            return new List<Story> 
-            { 
+            return new List<Story>
+            {
                 new Story { Name = "Test Story 1", ProjectName = "StoryMapper" },
                 new Story { Name = "Test Story 2", ProjectName = "StoryMapper" },
                 new Story { Name = "Test Story 3", ProjectName = "StoryMapper" },

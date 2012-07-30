@@ -1,6 +1,7 @@
-﻿using System;
-namespace StoryMapper.UI.Models
+﻿namespace StoryMapper.UI.Models
 {
+    using System;
+
     public class StoryViewModel
     {
         public Guid Id { get; set; }

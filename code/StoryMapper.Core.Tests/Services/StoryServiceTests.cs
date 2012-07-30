@@ -1,6 +1,5 @@
 ﻿namespace StoryMapper.Core.Tests.Services
 {
-    using System;
     using System.Collections.Generic;
     using System.Linq;
     using Microsoft.VisualStudio.TestTools.UnitTesting;
@@ -46,7 +45,7 @@
         [TestMethod]
         public void GetStoriesByProjectShouldReturnAListOfStories()
         {
-            // Arrange       
+            // Arrange
             this.RegisterSingleProjectStoriesMock();
             var service = new StoryService(this.GetMock<IStoryRepository>());
             var projectName = "StoryMapper";

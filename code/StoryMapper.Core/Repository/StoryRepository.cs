@@ -9,8 +9,9 @@
     {
         private readonly IList<Story> stories;
 
-        public StoryRepository() : this(new List<Story>())
-        {            
+        public StoryRepository()
+            : this(new List<Story>())
+        {
         }
 
         public StoryRepository(IList<Story> stories)

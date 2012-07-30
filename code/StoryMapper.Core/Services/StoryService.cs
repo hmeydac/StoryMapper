@@ -11,7 +11,7 @@
         public StoryService(IStoryRepository storyRepository)
         {
             this.storyRepository = storyRepository;
-        }     
+        }
 
         public StoryService(StoryRepository storyRepository)
         {

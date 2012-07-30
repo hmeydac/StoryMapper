@@ -79,7 +79,7 @@
 
             // Arrange
             dataList = this.GetMockDataMultiProjectList();
-            projectName = "TestProject1"; // Second Project            
+            projectName = "TestProject1"; // Second Project
 
             // Act
             repository = new StoryRepository(dataList);
@@ -98,7 +98,7 @@
 
             // Arrange
             dataList = this.GetMockDataMultiProjectList();
-            projectName = "TestProject2"; // Third Project      
+            projectName = "TestProject2"; // Third Project
 
             // Act
             repository = new StoryRepository(dataList);
@@ -149,7 +149,7 @@
             // Act
             var createdActual = repository.Create(expected);
             var obtainedActual = repository.Single(story => story.Name == expected.Name && story.ProjectName == expected.ProjectName);
-            
+
             // Assert
             Assert.IsNotNull(createdActual);
             Assert.IsNotNull(obtainedActual);
@@ -162,7 +162,7 @@
         [TestMethod]
         public void DeleteStoryShouldRemoveIt()
         {
-            // Arrange            
+            // Arrange
             var dataList = this.GetMockDataList();
             var repository = new StoryRepository(dataList);
             var expectedCount = dataList.Count() - 1;
@@ -226,8 +226,8 @@
 
         private IList<Story> GetMockDataList()
         {
-            return new List<Story> 
-            { 
+            return new List<Story>
+            {
                 new Story { Name = "Test Story 1", ProjectName = "StoryMapper" },
                 new Story { Name = "Test Story 2", ProjectName = "StoryMapper" },
                 new Story { Name = "Test Story 3", ProjectName = "StoryMapper" },
@@ -237,8 +237,8 @@
 
         private IList<Story> GetMockDataMultiProjectList()
         {
-            return new List<Story> 
-            { 
+            return new List<Story>
+            {
                 new Story { Name = "Test Story 1", ProjectName = "StoryMapper" },
                 new Story { Name = "Test Story 2", ProjectName = "StoryMapper" },
                 new Story { Name = "Test Story 3", ProjectName = "TestProject1" },

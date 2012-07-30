@@ -1,11 +1,7 @@
 ﻿namespace StoryMapper.Core
 {
-    using System;
     using System.Collections.Generic;
     using System.IO;
-    using System.Linq;
-    using System.Text;
-    using System.Threading.Tasks;
     using System.Web.Helpers;
     using StoryMapper.Core.Entities;
     using StoryMapper.Core.Repository;
@@ -46,7 +42,7 @@
         }
 
         public void Initialize(string path)
-        {            
+        {
             this.LoadStories(path);
         }
 

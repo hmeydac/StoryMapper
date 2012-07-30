@@ -48,8 +48,8 @@
       <timestamp>07/21/2012 21:17:53</timestamp>
       <milliseconds>243</milliseconds>
     </settings>
-    <timestamp>07/25/2012 08:20:00</timestamp>
-    <milliseconds>420</milliseconds>
+    <timestamp>07/29/2012 23:23:23</timestamp>
+    <milliseconds>753</milliseconds>
     <violations />
   </sourcecode>
   <sourcecode name="AssemblyInfo.cs" parser="StyleCop.CSharp.CsParser">
@@ -57,8 +57,8 @@
       <timestamp>07/21/2012 21:17:53</timestamp>
       <milliseconds>243</milliseconds>
     </settings>
-    <timestamp>07/22/2012 08:19:44</timestamp>
-    <milliseconds>808</milliseconds>
+    <timestamp>07/29/2012 23:25:16</timestamp>
+    <milliseconds>688</milliseconds>
     <violations />
   </sourcecode>
   <sourcecode name="StoryServiceTests.cs" parser="StyleCop.CSharp.CsParser">
@@ -66,8 +66,8 @@
       <timestamp>07/21/2012 21:17:53</timestamp>
       <milliseconds>243</milliseconds>
     </settings>
-    <timestamp>07/28/2012 02:02:40</timestamp>
-    <milliseconds>873</milliseconds>
+    <timestamp>07/29/2012 23:23:28</timestamp>
+    <milliseconds>451</milliseconds>
     <violations />
   </sourcecode>
   <sourcecode name="StoryRepositoryTests.cs" parser="StyleCop.CSharp.CsParser">
@@ -75,8 +75,8 @@
       <timestamp>07/21/2012 21:17:53</timestamp>
       <milliseconds>243</milliseconds>
     </settings>
-    <timestamp>07/25/2012 20:46:01</timestamp>
-    <milliseconds>842</milliseconds>
+    <timestamp>07/29/2012 23:23:26</timestamp>
+    <milliseconds>854</milliseconds>
     <violations />
   </sourcecode>
 </stylecopresultscache>

@@ -36,7 +36,7 @@
         {
             // Act
             var domain = Domain.Current;
-            
+
             // Assert
             Assert.IsNotNull(domain);
         }

@@ -1,10 +1,6 @@
 namespace StoryMapper.UI
 {
-    using System.Collections;
-    using System.Collections.Generic;
-    using System.Web;
     using StoryMapper.Core;
-    using StoryMapper.Core.Entities;
     using StoryMapper.Core.Repository;
     using StructureMap;
 
