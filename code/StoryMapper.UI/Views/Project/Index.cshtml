@@ -5,13 +5,15 @@
 }
 
 <h2>@(Model.ProjectName)</h2>
+<div class="container-fluid">
 <div class="row-fluid">
 @{        
     foreach (var story in Model.Stories)
     {
-        <div class="span4 well">
+        <div class="sticky span1 alert">
             @(story.Name)
         </div>        
     } 
 }
+</div>
 </div>

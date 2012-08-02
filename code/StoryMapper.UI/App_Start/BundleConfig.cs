@@ -22,6 +22,7 @@
             bundles.Add(new StyleBundle("~/Content/css").Include("~/Content/bootstrap.css", "~/Content/bootstrap-responsive.css"));
 
             bundles.Add(new StyleBundle("~/Content/themes/base/css").Include(
+                "~/Content/themes/mapper/notes.css",
                         "~/Content/themes/base/jquery.ui.core.css",
                         "~/Content/themes/base/jquery.ui.resizable.css",
                         "~/Content/themes/base/jquery.ui.selectable.css",
