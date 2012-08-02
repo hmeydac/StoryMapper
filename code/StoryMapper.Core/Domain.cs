@@ -69,10 +69,25 @@
                     ProjectName = item.ProjectName
                 };
 
+                this.LoadChildStories(story, item.Stories);
                 stories.Add(story);
             }
 
             return stories;
+        }
+
+        private void LoadChildStories(Story parent, dynamic childs)
+        {
+            foreach (var item in childs)
+            {
+                var story = new Story
+                {
+                    Name = item.Name,
+                    ProjectName = item.ProjectName
+                };
+
+                parent.Stories.Add(story);
+            }
         }
     }
 }

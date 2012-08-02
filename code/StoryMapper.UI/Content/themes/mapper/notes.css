@@ -1,5 +1,32 @@
 ﻿.sticky
 {
-    min-height: 250px;
-    min-width: 200px;
-    }
+    border-spacing: 0;
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+    border-radius: 4px;
+    margin: 5px;
+    padding: 5px;
+    vertical-align: top;
+    text-align: left;
+    min-height: 125px;
+    width: 125px;
+}
+
+.main-story
+{
+    background-color: #FCF0AD;
+    border: 1px solid #fbeed5;
+}
+
+.header-story
+{
+    background-color: #56C4E8;
+    border: 1px solid #fbeed5;
+}
+
+.sticky-shadow
+{
+    -moz-box-shadow: 1px 1px 2px 1px #ccc;
+    -webkit-box-shadow: 1px 1px 2px 1px #ccc;
+    box-shadow: 1px 1px 2px 1px #ccc;
+}

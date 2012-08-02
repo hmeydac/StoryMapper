@@ -1,5 +1,6 @@
 ﻿namespace StoryMapper.UI.Controllers
 {
+    using System.Collections.Generic;
     using System.Web.Mvc;
     using AutoMapper;
     using StoryMapper.Core.Entities;
@@ -24,7 +25,9 @@
             var projectStoriesViewModel = new ProjectStoriesViewModel { ProjectName = "StoryMapper" };
             foreach (var story in stories)
             {
-                projectStoriesViewModel.Stories.Add(Mapper.Map<StoryViewModel>(story));
+                var storyViewModel = Mapper.Map<StoryViewModel>(story);
+                storyViewModel.Stories = Mapper.Map<List<StoryViewModel>>(story.Stories);
+                projectStoriesViewModel.Stories.Add(storyViewModel);
             }
 
             return this.View(projectStoriesViewModel);

@@ -1,19 +1,44 @@
 ﻿@model StoryMapper.UI.Models.ProjectStoriesViewModel
-
 @{
     ViewBag.Title = "Stories";
 }
-
 <h2>@(Model.ProjectName)</h2>
-<div class="container-fluid">
-<div class="row-fluid">
-@{        
-    foreach (var story in Model.Stories)
-    {
-        <div class="sticky span1 alert">
-            @(story.Name)
-        </div>        
-    } 
-}
-</div>
-</div>
+<table class="storyBoard">
+    <tr>
+        @{        
+            foreach (var story in Model.Stories)
+            {
+            <td>
+                <div class="sticky header-story sticky-shadow header-text">
+                    @(story.Name)
+                </div>
+            </td>
+                for (var i = 0; i < story.Stories.Count - 1; i++)
+                { 
+            <td>
+            </td>
+                }
+            } 
+        }
+    </tr>
+    <tr>
+        @{
+            foreach (var parentStory in Model.Stories)
+            {
+                foreach (var story in parentStory.Stories)
+                {                
+            <td>
+                <div class="sticky main-story sticky-shadow sticky-text">
+                    @(story.Name)
+                </div>
+            </td>
+                    for (var i = 0; i < story.Stories.Count; i++)
+                    { 
+            <td>
+            </td>
+                    }
+                }
+            }
+        }
+    </tr>
+</table>

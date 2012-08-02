@@ -1,7 +1,20 @@
 ﻿[
-	{ Name: "Create the repository", ProjectName: "StoryMapper" },
-	{ Name: "Create the service", ProjectName: "StoryMapper" },
-	{ Name: "Create the entity", ProjectName: "StoryMapper" },
-	{ Name: "Create Controller", ProjectName: "StoryMapper" },
-	{ Name: "Create View", ProjectName: "StoryMapper" }
+	{ Name: "Make Stories!", ProjectName: "StoryMapper",
+		Stories: [
+					{ Name: "Create the repository", ProjectName: "StoryMapper" },
+					{ Name: "Create the service to retrieve entity-specific data.", ProjectName: "StoryMapper" },
+					{ Name: "Create the entity", ProjectName: "StoryMapper" },
+					{ Name: "Create Controller", ProjectName: "StoryMapper" },
+					{ Name: "Create View", ProjectName: "StoryMapper" }
+				]
+	},
+	{ Name: "Make Projects!", ProjectName: "StoryMapper",
+		Stories: [
+					{ Name: "Create the repository", ProjectName: "StoryMapper" },
+					{ Name: "Create the service to retrieve entity-specific data.", ProjectName: "StoryMapper" },
+					{ Name: "Create the entity", ProjectName: "StoryMapper" },
+					{ Name: "Create Controller", ProjectName: "StoryMapper" },
+					{ Name: "Create View", ProjectName: "StoryMapper" }
+				]
+	}
 ]

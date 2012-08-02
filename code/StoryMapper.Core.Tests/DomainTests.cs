@@ -28,6 +28,7 @@
             {
                 Assert.IsNotNull(story.Name);
                 Assert.IsNotNull(story.ProjectName);
+                Assert.IsTrue(story.Stories.Count() > 0);
             }
         }
 
