@@ -23,14 +23,23 @@
             var map = Mapper.CreateMap<Story, StoryViewModel>();
 
             var projectStoriesViewModel = new ProjectStoriesViewModel { ProjectName = "StoryMapper" };
-            foreach (var story in stories)
-            {
-                var storyViewModel = Mapper.Map<StoryViewModel>(story);
-                storyViewModel.Stories = Mapper.Map<List<StoryViewModel>>(story.Stories);
-                projectStoriesViewModel.Stories.Add(storyViewModel);
-            }
+            projectStoriesViewModel.Stories = this.MapViewModel(stories);
 
             return this.View(projectStoriesViewModel);
+        }
+
+        private List<StoryViewModel> MapViewModel(IEnumerable<Story> stories)
+        {
+            var viewModelList = new List<StoryViewModel>();
+
+            foreach (var story in stories)
+            {
+                var storyViewModel = Mapper.Map<StoryViewModel>(story);                
+                storyViewModel.Stories = this.MapViewModel(story.Stories);
+                viewModelList.Add(storyViewModel);
+            }
+
+            return viewModelList;
         }
     }
 }

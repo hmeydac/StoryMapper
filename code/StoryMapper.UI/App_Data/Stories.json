@@ -1,7 +1,11 @@
 ﻿[
 	{ Name: "Make Stories!", ProjectName: "StoryMapper",
 		Stories: [
-					{ Name: "Create the repository", ProjectName: "StoryMapper" },
+					{ Name: "Create the repository", ProjectName: "StoryMapper",
+						Stories: [
+						{ Name: "Connect the database.", ProjectName: "StoryMapper" },
+						{ Name: "Create DBContext class.", ProjectName: "StoryMapper" }
+						] },
 					{ Name: "Create the service to retrieve entity-specific data.", ProjectName: "StoryMapper" },
 					{ Name: "Create the entity", ProjectName: "StoryMapper" },
 					{ Name: "Create Controller", ProjectName: "StoryMapper" },

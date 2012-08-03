@@ -1,4 +1,9 @@
 ﻿.storyBoard
 {
     padding: 5px;
-    }
+}
+
+.storyBoard td
+{
+    vertical-align: top;
+}
