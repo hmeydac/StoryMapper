@@ -1,24 +1,38 @@
 ﻿[
 	{ Name: "Make Stories!", ProjectName: "StoryMapper",
 		Stories: [
-					{ Name: "Create the repository", ProjectName: "StoryMapper",
-						Stories: [
-						{ Name: "Connect the database.", ProjectName: "StoryMapper" },
-						{ Name: "Create DBContext class.", ProjectName: "StoryMapper" }
-						] },
-					{ Name: "Create the service to retrieve entity-specific data.", ProjectName: "StoryMapper" },
-					{ Name: "Create the entity", ProjectName: "StoryMapper" },
-					{ Name: "Create Controller", ProjectName: "StoryMapper" },
-					{ Name: "Create View", ProjectName: "StoryMapper" }
+					{ Name: "Create the Project Story View", ProjectName: "StoryMapper",
+						Stories: 
+						[
+							{ Name: "Create the View.", ProjectName: "StoryMapper" },
+							{ Name: "Create the Controller.", ProjectName: "StoryMapper" },
+							{ Name: "Create the Service.", ProjectName: "StoryMapper" }
+						] 
+					},
+					{ Name: "Create a hierarchical view for sticky notes.", ProjectName: "StoryMapper",
+						Stories: 
+						[
+							{ Name: "Use Razor to achieve this.", ProjectName: "StoryMapper" }						
+						] 
+					}
 				]
 	},
-	{ Name: "Make Projects!", ProjectName: "StoryMapper",
+	{ Name: "Updating!", ProjectName: "StoryMapper",
 		Stories: [
-					{ Name: "Create the repository", ProjectName: "StoryMapper" },
-					{ Name: "Create the service to retrieve entity-specific data.", ProjectName: "StoryMapper" },
-					{ Name: "Create the entity", ProjectName: "StoryMapper" },
-					{ Name: "Create Controller", ProjectName: "StoryMapper" },
-					{ Name: "Create View", ProjectName: "StoryMapper" }
+					{ Name: "Add/Remove Stories", ProjectName: "StoryMapper",
+						Stories: [
+						{ Name: "Create Add Feature.", ProjectName: "StoryMapper" },
+						{ Name: "Create Add Tests.", ProjectName: "StoryMapper" },
+						{ Name: "Create Remove Feature.", ProjectName: "StoryMapper" },
+						{ Name: "Create Remove Tests.", ProjectName: "StoryMapper" }
+						]					
+					 }
+				]
+	},
+	{ Name: "Moving the Board...", ProjectName: "StoryMapper",
+		Stories: [
+					{ Name: "Move Story Up and Down", ProjectName: "StoryMapper" },
+					{ Name: "Move Story Left and Right", ProjectName: "StoryMapper" }
 				]
 	}
-]
+ ]

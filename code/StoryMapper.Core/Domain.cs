@@ -78,6 +78,11 @@
 
         private void LoadChildStories(Story parent, dynamic childs)
         {
+            if (childs == null)
+            {
+                return;
+            }
+
             foreach (var item in childs)
             {
                 var story = new Story
@@ -86,6 +91,7 @@
                     ProjectName = item.ProjectName
                 };
 
+                this.LoadChildStories(story, item.Stories);
                 parent.Stories.Add(story);
             }
         }

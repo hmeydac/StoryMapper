@@ -8,41 +8,41 @@
         @{        
             foreach (var story in Model.Stories)
             {
-            <td>
+            <td class="storyBoardColumn">
                 <table class="storyBoard">
                     <tr>
-                        <td>
+                        <td class="storyBoardColumn">
                             <div class="sticky header-story sticky-shadow header-text">
                                 @(story.Name)
                             </div>
                         </td>
                     </tr>
-                    @foreach (var childStory in story.Stories)
-                    {
-                        <tr>
-                            <td>
+                    <tr>
+                        @foreach (var childStory in story.Stories)
+                        {                        
+                            <td class="storyBoardColumn">
                                 <table class="storyBoard">
                                     <tr>
-                                        <td>
+                                        <td class="storyBoardColumn">
                                             <div class="sticky main-story sticky-shadow sticky-text">
                                                 @(childStory.Name)
                                             </div>
                                         </td>
                                     </tr>
-                                    <tr>
-                                        @foreach (var thirdLevelChild in childStory.Stories)
-                                        {                                    
-                                            <td>
+                                    @foreach (var thirdLevelChild in childStory.Stories)
+                                    {                                    
+                                        <tr>
+                                            <td class="storyBoardColumn">
                                                 <div class="sticky main-story sticky-shadow sticky-text">
                                                     @(thirdLevelChild.Name)
                                                 </div>
-                                            </td>                                    
-                                        }
-                                    </tr>                                    
+                                            </td>
+                                        </tr>                                    
+                                    }
                                 </table>
-                            </td>
-                        </tr>
-                    }
+                            </td>                        
+                        }
+                    </tr>
                 </table>
             </td>                
             } 

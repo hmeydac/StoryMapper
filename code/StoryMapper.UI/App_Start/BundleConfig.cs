@@ -24,6 +24,7 @@
             bundles.Add(new StyleBundle("~/Content/themes/base/css").Include(
                 "~/Content/themes/mapper/notes.css",
                 "~/Content/themes/mapper/text.css",
+                "~/Content/themes/mapper/board.css",
                         "~/Content/themes/base/jquery.ui.core.css",
                         "~/Content/themes/base/jquery.ui.resizable.css",
                         "~/Content/themes/base/jquery.ui.selectable.css",
